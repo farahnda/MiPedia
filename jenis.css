@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'montserrat-medium';
+    src: url('assets/fonts/Montserrat-Medium.woff2') format('woff2'); 
+    font-weight: normal; 
+    font-style: normal;    
+    }
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('assets/fonts/Poppins-Bold.woff2') format('woff2'); 
+    font-weight: normal; 
+    font-style: normal;    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    font-family: 'poppins-bold';
+}
+
+.back-link {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: #ff9900; 
+    color: #fff; 
+    border-radius: 5px;
+    text-decoration: none; 
+    transition: background-color 0.3s;
+}
+.back-link:hover {
+    background-color: #cc7a00; 
+}
+
+p{
+    font-family: 'montserrat-medium';
+}
+
+.jenis-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.jenis-item {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.jenis-item:hover {
+    transform: scale(1.03);
+}
+
+.jenis-item img {
+    max-width: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.jenis-detail {
+    display: none;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -10px;
+    grid-column: span 1;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* For modal text */
+#modal-body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.nutrisi-section {
+    margin: 40px auto;
+    width: 80%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nutrisi-section h2 {
+    font-family: 'poppins-bold';
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nutrisi-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.nutrisi-table th, .nutrisi-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.nutrisi-table th {
+    background-color: #748DB9;
+    color: white;
+    font-weight: bold;
+}
+
+.nutrisi-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.nutrisi-table tr:hover {
+    background-color: #ddd;
+}
